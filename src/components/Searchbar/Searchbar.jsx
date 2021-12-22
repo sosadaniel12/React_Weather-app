@@ -6,7 +6,7 @@ const SearchBar = () => {
   const [formInput, setFormInput] = useState("city name");
   function handleSubmit(event) {
     event.preventDefault();
-    const url = `api.openweathermap.org/data/2.5/forecast?q=${formInput}&appid=${process.env.REACT_APP_API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${formInput}&appid=${process.env.REACT_APP_API_KEY}`;
     console.log(url);
     axios
       .get(url)
