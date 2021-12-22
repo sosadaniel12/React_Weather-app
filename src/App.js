@@ -1,13 +1,12 @@
-import logo from "./logo.svg";
+import City from "./screens/City";
 import "./App.css";
-import SearchBar from "./components/Searchbar/Searchbar";
+import React from "react";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Weather App</h2>
-        <SearchBar />
+        <City />
       </header>
     </div>
   );
